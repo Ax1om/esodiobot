@@ -17,8 +17,7 @@ module.exports = bot => {
   /**
    * Marco Polo!!
    */
-  bot.onText(/\/marco/i, msg => {
-
+  bot.onText(/^\/marco/i, msg => {
     const isPolloExtracted = isExtracted(30);
     const imageName = isPolloExtracted ? 'pollo' : 'polo';
     const imageNumber = isPolloExtracted ? '' : Math.ceil(Math.random() * 10);
