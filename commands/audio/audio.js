@@ -19,7 +19,7 @@ module.exports = bot => {
     /**
      * Audio Test!!
      */
-    bot.onText(/\/audio/gi, msg => {
+    bot.onText(/^\/audio/gi, msg => {
         const audio = meSpeak.speak(bestemmiatore(), {rawdata: true});
         bot.sendAudio(msg.chat.id, toBuffer(audio));
     });
