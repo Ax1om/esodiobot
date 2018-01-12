@@ -12,8 +12,6 @@ module.exports = bot => {
         const messageQuantity = parseInt(match[2]);
         const word  = match[3];
         let message = '', i=0;
-        console.log('spamType', spamType);
-        console.log('messageQuantity', messageQuantity);
 
             if (spamType === 's') {
                 for (i = 0; i < messageQuantity; i++) {
