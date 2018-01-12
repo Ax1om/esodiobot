@@ -11,6 +11,7 @@ const onomastico = require('./commands/onomastico/onomastico');
 const marcopolo = require('./commands/marcopolo/marcopolo');
 const bestemmia = require ('./commands/blasphemiesgenerator/blasphemiesgenerator');
 const audio = require ('./commands/audio/audio');
+const spam = require ('./commands/spam/spam');
 
 const TOKEN = process.env.TELEGRAM_TOKEN;
 const options = {
@@ -28,4 +29,5 @@ addEventsToBot(bot, [
     marcopolo,
     bestemmia,
     audio,
+    spam
 ]);
