@@ -5,7 +5,7 @@ module.exports = bot => {
    * Ritorna il tuo onomastico
    * Usage: /onomastico 'dataDiNascita' ['formatDate']
    */
-  bot.onText(/^\/onomastico(\s([\d\-\/]+)\s*([dDmMyY\-\/]+)?)?/, (msg, match) => {
+  bot.onText(/^\/onomastico(\s([\d\-\/]+)\s*([dDmMyY\-\/]+)?)?/i, (msg, match) => {
     const birthDateString = match[2];
     const parsedFormatDate = match[3];
     const validFormatDate = parsedFormatDate || 'DD-MM-YYYY';
